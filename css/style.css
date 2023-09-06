@@ -1,0 +1,586 @@
+body {
+    background: #000000;
+    color: #999;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* start all section */
+#home,
+#home .fp-slide,
+#home .fp-tableCell,
+
+#work,
+#work .fp-slide,
+#work .fp-tableCell,
+
+#about,
+#about .fp-slide,
+#about .fp-tableCell,
+
+#contact,
+#contact .fp-slide,
+#contact .fp-tableCell,
+
+#portfolio,
+#portfolio .fp-slide,
+#portfolio .fp-tableCell,
+
+footer,
+footer .fp-slide,
+footer .fp-tableCell {
+    height: auto !important;
+}
+
+/* end all section */
+
+/* start all heading */
+h1,
+h2,
+h3{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+
+h4,
+h5 {
+    color: #fffFFF;
+    font-weight: bold;
+}
+
+/* end all heading */
+
+/* start all section */
+#work,
+#about,
+#portfolio,
+#contact {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+
+/* end all section */
+
+/* start simpletextrotator */
+.rotating {
+    display: inline-block;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+    -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    -webkit-transform-origin-x: 50%;
+}
+
+.rotating.flip {
+    position: relative;
+}
+
+.rotating .front,
+.rotating .back {
+    left: 0;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.rotating .front {
+    position: absolute;
+    display: inline-block;
+    -webkit-transform: translate3d(0, 0, 1px);
+    -moz-transform: translate3d(0, 0, 1px);
+    -ms-transform: translate3d(0, 0, 1px);
+    -o-transform: translate3d(0, 0, 1px);
+    transform: translate3d(0, 0, 1px);
+}
+
+.rotating.flip .front {
+    z-index: 1;
+}
+
+.rotating .back {
+    display: block;
+    opacity: 0;
+}
+
+.rotating.spin {
+    -webkit-transform: rotate(360deg) scale(0);
+    -moz-transform: rotate(360deg) scale(0);
+    -ms-transform: rotate(360deg) scale(0);
+    -o-transform: rotate(360deg) scale(0);
+    transform: rotate(360deg) scale(0);
+}
+
+.rotating.flip .back {
+    z-index: 2;
+    display: block;
+    opacity: 1;
+
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -moz-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -ms-transform: rotateY(180deg) translate3d(0, 0, 0);
+    -o-transform: rotateY(180deg) translate3d(0, 0, 0);
+    transform: rotateY(180deg) translate3d(0, 0, 0);
+}
+
+.rotating.flip.up .back {
+    -webkit-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -moz-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -ms-transform: rotateX(180deg) translate3d(0, 0, 0);
+    -o-transform: rotateX(180deg) translate3d(0, 0, 0);
+    transform: rotateX(180deg) translate3d(0, 0, 0);
+}
+
+.rotating.flip.cube .front {
+    -webkit-transform: translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+.rotating.flip.cube .back {
+    -webkit-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: rotateY(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+.rotating.flip.cube.up .back {
+    -webkit-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.9, 0.9);
+    -moz-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -ms-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    -o-transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+    transform: rotateX(180deg) translate3d(0, 0, 100px) scale(0.85, 0.85);
+}
+
+/* end simpletextrotator */
+
+/* start home */
+
+#home 
+{
+    background: url('../images/sapphire-sky-5k-sc-5120x2880.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+    padding-bottom: 600px;
+    text-align: center;
+}
+
+#home h1 
+{
+    border: 2px solid #ffffff;
+    color: black;
+    display: inline-block;
+    letter-spacing: 6px;
+    padding: 25px 35px;
+    margin: 30px 0;
+    background: #e7e6e6;
+    border-radius: 5px;
+}
+
+#home h2 
+{
+    padding-bottom: 10px;
+}
+
+#home .btn 
+{
+    background: #e7e6e6;
+    border: 2px solid #ffffff;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    width: 180px;
+    height: 60px;
+    margin-top: 40px;
+    padding-top: 18px;
+    transition: all 0.4s ease-in-out;
+}
+
+#home .btn:hover {
+    color: white;
+    border-color: transparent;
+}
+
+#home .row
+{
+    margin: 0;
+}
+
+.row .icon
+{
+    margin-top: 30px;
+    align-items: center;
+    padding: 0;
+}
+  
+ .col-md-4 
+{
+    flex-basis: unset;
+    align-items: center;
+}
+  
+.icon 
+{
+  text-align: center;
+  align-items: unset;
+  margin-top: 40px; 
+}
+
+.icon i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #e7e6e6;
+}
+
+.icon h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #333; 
+}
+
+.icon:hover i {
+    color: black;
+    border-color: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+/* end home */
+
+/* start skills */
+#work {
+    background: rgb(16,24,37);
+    padding-bottom: 400px;
+}
+
+#work h2 {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#work .media {
+    margin-top: 30px;
+}
+
+#work .media .fa {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: white;
+    font-size: 24px;
+    margin-right: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 55px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all 0.4s ease-in;
+}
+
+#work .media .fa:hover {
+    background: #fff;
+}
+
+#work .media .media-heading {
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 15px;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.skills-list li
+{
+    font-weight: 525;
+    font-size: 15px;
+    color: white;
+    margin-left: 0px;
+    margin-top: 30px;
+    list-style: none;
+}
+
+.skills-list li .fa-brands
+{
+    margin-right: 10px;
+}
+
+.skills-list li .fa-sharp
+{
+    margin-right: 10px;
+}
+
+.skills-list li .fa-solid
+{
+    margin-right: 10px;
+}
+/*end of skills  */
+
+/* start about */
+#about h4 {
+    padding: 15px 0;
+    color: white;
+}
+
+#about p {
+    padding: 15px 0;
+    color: white;
+    height: 620px;
+}
+
+#about .progress {
+    border-radius: 4px;
+    background: #fff;
+    height: 6px;
+}
+
+#about .progress .progress-bar-danger {
+    background-color: white;
+}
+
+#about .text-top {
+    padding-top: 50px;
+}
+
+#about span {
+    color: #fff;
+    font-weight: bold;
+    display: block;
+    padding-bottom: 6px;
+}
+
+#about small {
+    font-weight: bold;
+    float: right;
+}
+
+
+.portfolio-thumb1 img {
+    margin-left: 90px;
+    padding-top: 100px;
+    transition: opacity 0.3s ease;
+}
+
+.portfolio-thumb1:hover img {
+    opacity: 0.7;
+}
+
+#about .portfolio-thumb1 h4 {
+    text-align: center;
+    padding-left: 190px;
+    color: white;
+    font-size: small;
+    font-weight: 0;
+}
+
+/* end of about */
+
+/* start portfolio */
+#portfolio {
+    background: rgb(16,24,37);
+    text-align: center;
+    padding-bottom: 250px;
+}
+
+#portfolio h2 {
+    padding-bottom: 50px;
+}
+
+#portfolio .portfolio-thumb {
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+#portfolio .portfolio-thumb .portfolio-overlay {
+    background: black;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding-top: 60px;
+    transition: all 0.4s ease-in-out;
+}
+
+#portfolio .portfolio-thumb:hover .portfolio-overlay {
+    cursor: pointer;
+    opacity: 0.6;
+    transform: scale(0.8);
+}
+
+/* end of portfolio */
+
+/* start contact */
+
+#contact address {
+    padding-bottom: 18px;
+}
+
+#contact .contact-title {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #fff;
+}
+
+#contact .fa {
+    border: 2px solid #fff;
+    border-radius: 50%;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+#contact .form-control {
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+#contact input {
+    height: 50px;
+}
+
+#contact input[type="submit"] {
+    background: #fff;
+    border: 2px solid transparent;
+    color: black;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out;
+}
+
+#contact input[type="submit"]:hover {
+    background-color: #fff;
+    color: white;
+}
+
+/* end of contact */
+
+/* footer */
+
+footer {
+    border-top: 1px solid #090900;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+footer hr {
+    width: 100px;
+}
+
+/* end of footer */
+
+/* social media icon */
+
+.social-icon {
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icon li {
+    display: inline-block;
+    list-style: none;
+}
+
+.social-icon li a {
+    border-radius: 50%;
+    color: #606060;
+    text-decoration: none;
+    text-align: center;
+    margin-right: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.social-icon li a:hover {
+    color: #D43F52;
+}
+
+/* end of social-icons */
+
+p{
+    padding: auto;
+    color: white;
+}
+
+.sidebar {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: sticky; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
+  
+  /* The navigation menu links */
+  .sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  .img-responsive{
+    size: cover;
+  }
+
+  
+
+  .img-woo{
+    padding: 150px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .img-woo2{
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
